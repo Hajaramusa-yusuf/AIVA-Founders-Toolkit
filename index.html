@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Founder's Toolkit - Feedback Collector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Founders Toolkit</h1>
+            <p class="subtitle">Start to collect feedback on my problem.</p>
+        </header>
+
+        <main>
+            <!-- Input Form Section -->
+            <section class="form-section">
+                <h2>Add New Idea</h2>
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="problemStatement">Problem You're Solving</label>
+                        <textarea 
+                            id="problemStatement" 
+                            placeholder="Describe the problem your business idea addresses..."
+                            rows="4" 
+                            required>
+                        </textarea>
+                    </div>
+
+                    <div class="stakeholders-section">
+                        <h3>Stakeholder Feedback</h3>
+                        
+                        <!-- Stakeholder 1 -->
+                        <div class="stakeholder-card">
+                            <h4>Stakeholder 1</h4>
+                            <div class="form-group">
+                                <label for="stakeholder1Resonate">Does this problem resonate with them?</label>
+                                <textarea 
+                                    id="stakeholder1Resonate" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder1Aspects">What aspects do they think matter most?</label>
+                                <textarea 
+                                    id="stakeholder1Aspects" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder1Concerns">What questions or concerns come to mind?</label>
+                                <textarea 
+                                    id="stakeholder1Concerns" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder1Missing">What are you missing about this problem?</label>
+                                <textarea 
+                                    id="stakeholder1Missing" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <!-- Stakeholder 2 -->
+                        <div class="stakeholder-card">
+                            <h4>Stakeholder 2</h4>
+                            <div class="form-group">
+                                <label for="stakeholder2Resonate">Does this problem resonate with them?</label>
+                                <textarea 
+                                    id="stakeholder2Resonate" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder2Aspects">What aspects do they think matter most?</label>
+                                <textarea 
+                                    id="stakeholder2Aspects" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder2Concerns">What questions or concerns come to mind?</label>
+                                <textarea 
+                                    id="stakeholder2Concerns" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="stakeholder2Missing">What are you missing about this problem?</label>
+                                <textarea 
+                                    id="stakeholder2Missing" 
+                                    placeholder="Enter feedback..."
+                                    rows="2"
+                                    required>
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Problem and Feedback</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </form>
+            </section>
+
+            <!-- Saved Ideas Section -->
+            <section class="ideas-section">
+                <h2>Your Collected Ideas</h2>
+                <div id="ideasContainer" class="ideas-grid">
+                    <p class="empty-state">No ideas saved yet. Start by adding your first idea above!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 AI Founder's Toolkit. Building better ideas together.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
